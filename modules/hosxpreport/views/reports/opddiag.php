@@ -11,7 +11,7 @@ use miloschuman\highcharts\Highcharts;
 <?php
 echo Highcharts::widget([
    'options' => [
-      'title' => ['text' => 'Fruit Consumption'],
+      'title' => ['text' => '10 อันดับโรค OPD'],
       'xAxis' => [
          'categories' => ['Apples', 'Bananas', 'Oranges']
       ],
