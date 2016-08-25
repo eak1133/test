@@ -37,6 +37,7 @@
                     ['label' => '<i class="fa fa-book" aria-hidden="true"></i>  หน่วยงาน', 'url' => ['departments/index']],
                     ['label' => '<i class="fa fa-book" aria-hidden="true"></i>  เพิ่มหน่วยงาน', 'url' => ['departments/create']],
                     ['label' => '<i class="fa fa-book" aria-hidden="true"></i>  10 อันดับโรค OPD', 'url' => ['hosxpreport/reports/opddiag']],
+                    ['label' => '<i class="fa fa-book" aria-hidden="true"></i>  รายงาน', 'url' => ['hosxpreport/reports/indivopddiag']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     [
                         'label' => 'Same tools',
