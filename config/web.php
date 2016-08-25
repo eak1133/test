@@ -50,6 +50,13 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+        'db2'=>[
+            'class' => 'yii\db\Connection',
+    'dsn' => 'mysql:host=127.0.0.1;dbname=hos',
+    'username' => 'sa',
+    'password' => 'sa',
+    'charset' => 'utf8',
+        ]
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,
@@ -62,7 +69,10 @@ $config = [
     'modules'=>[
         'gridview'=>[
             'class'=>'\kartik\grid\Module'
-        ]   
+        ],
+        'hosxpreport' => [
+            'class' => 'app\modules\hosxpreport\Module',
+        ],
     ],
     'params' => $params,
 ];
