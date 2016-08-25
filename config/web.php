@@ -103,7 +103,7 @@ $config = [
             'groups/*',
             'departments/*',
             'setting/*',
-            'hosxpreport/reports/*',
+//            'hosxpreport/reports/*',
             
             'some-controller/some-action',
             // The actions listed here will be allowed to everyone including guests.
