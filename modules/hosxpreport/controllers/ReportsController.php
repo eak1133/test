@@ -22,7 +22,7 @@ class ReportsController extends Controller{
        for ($i = 0; $i < sizeof($data); $i++) {
             $pdx[] = $data[$i]['pdx'];        
             $icdname[] = $data[$i]['icdname']; 
-            $a[] = $data[$i]['a']; 
+            $a[] = $data[$i]['a']*1; 
         }
         
         $dataProvider = new ArrayDataProvider([
@@ -37,4 +37,3 @@ class ReportsController extends Controller{
         ]);
     }
 }
-

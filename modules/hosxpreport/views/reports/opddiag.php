@@ -8,24 +8,29 @@ use kartik\grid\GridView;
 use miloschuman\highcharts\Highcharts;
 ?>
 
-<?php
-echo Highcharts::widget([
-   'options' => [
-      'title' => ['text' => '10 อันดับโรค OPD'],
-      'xAxis' => [
-         'categories' => ['Apples', 'Bananas', 'Oranges']
-      ],
-      'yAxis' => [
-         'title' => ['text' => 'Fruit eaten']
-      ],
-      'series' => [
-         ['name' => 'Jane', 'data' => [1, 0, 4]],
-         ['name' => 'John', 'data' => [5, 7, 3]]
-      ]
-   ]
-]);
-
-?>
+<?php echo Highcharts::widget([
+    'options'=>[        
+        'title'=>['text'=>'สิบอันดับโรค OPD'],
+        'xAxis'=>[
+            'categories'=>$icdname
+        ],
+        'yAxis'=>[
+            'title'=>['text'=>'จำนวน(คน)']
+        ],
+        'series'=>[
+            [
+                'type'=>'line',
+                'name'=>'จำนวน',
+                'data'=>$a,
+                'dataLabels'=>[
+                    'enabled'=>true,
+                ]
+            ],
+            
+            
+        ]
+    ]
+]);?>
 
 
 <?php
