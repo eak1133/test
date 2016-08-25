@@ -50,12 +50,12 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-        'db2'=>[
+        'db2' => [
             'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=127.0.0.1;dbname=hos',
-    'username' => 'sa',
-    'password' => 'sa',
-    'charset' => 'utf8',
+            'dsn' => 'mysql:host=127.0.0.1;dbname=hos',
+            'username' => 'sa',
+            'password' => 'sa',
+            'charset' => 'utf8',
         ]
         /*
         'urlManager' => [
