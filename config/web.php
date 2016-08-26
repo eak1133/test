@@ -96,14 +96,14 @@ $config = [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
             'site/*',
-            'admin/*',
-            'user/*',
-            'rbac/*',
-            'gii/*',
-            'groups/*',
-            'departments/*',
-            'setting/*',
-//            'hosxpreport/reports/*',
+//            'admin/*',
+//            'user/*',
+//            'rbac/*',
+//            'gii/*',
+//            'groups/*',
+//            'departments/*',
+//            'setting/*',
+//         'hosxpreport/reports/*',
             
             'some-controller/some-action',
             // The actions listed here will be allowed to everyone including guests.
